@@ -1,33 +1,69 @@
-.App {
+.HeadingStyle {
+  font-family: "Merienda", cursive;
   text-align: center;
+  color: white;
+  font-weight: lighter;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.InteractionArea {
+  margin-top: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#text {
+  text-align: start;
+}
+
+#author {
+  font-style: italic;
+  text-align: end;
+  font-size: 1rem;
+}
+
+#quote-box {
+  width: 30%;
+  background: linear-gradient(rgb(124, 38, 38), rgb(201, 83, 83));
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  border-radius: 2px;
+}
+
+p {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#new-quote,
+#tweet-quote {
+  padding: 15px;
+  background-color: #333232;
+  border: 0px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#new-quote {
+  font-family: "Source Sans Pro", sans-serif;
+  float: right;
+  background-color: #333232;
+}
+
+#new-quote:hover {
+  background: #212121;
+  transition: 0.3s;
+}
+
+#new-quote:focus,
+#tweet-quote:focus {
+  outline: 0;
+}
+
+#tweet-quote:hover {
+  background-color: #1da1f2;
+  transition: 0.3s;
 }
