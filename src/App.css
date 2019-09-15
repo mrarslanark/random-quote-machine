@@ -7,21 +7,22 @@
 
 .InteractionArea {
   margin-top: 50px;
+  text-align: center;
 }
 
 #text {
-  text-align: start;
+  text-align: center;
+  font-size: 2.5rem;
 }
 
 #author {
   font-style: italic;
-  text-align: end;
+  text-align: center;
   font-size: 1rem;
 }
 
 #quote-box {
-  width: 30%;
-  background: linear-gradient(rgb(124, 38, 38), rgb(201, 83, 83));
+  width: 90%;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -37,24 +38,29 @@ p {
   color: white;
 }
 
-#new-quote,
-#tweet-quote {
+#new-quote {
   padding: 15px;
-  background-color: #333232;
+  background-color: #212121;
   border: 0px;
   border-radius: 5px;
   color: white;
   cursor: pointer;
 }
 
-#new-quote {
+#new-quote,
+#tweet-quote {
   font-family: "Source Sans Pro", sans-serif;
-  float: right;
-  background-color: #333232;
+}
+
+#tweet-quote,
+i {
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
 }
 
 #new-quote:hover {
-  background: #212121;
+  background: #000000;
   transition: 0.3s;
 }
 
@@ -63,7 +69,8 @@ p {
   outline: 0;
 }
 
-#tweet-quote:hover {
-  background-color: #1da1f2;
+#tweet-quote:hover,
+i:hover {
+  color: #1da1f2;
   transition: 0.3s;
 }
